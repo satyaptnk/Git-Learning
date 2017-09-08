@@ -20,7 +20,7 @@
     }
 
     Test(ev : MouseEvent) {
-        alert(this.span.innerText);
+        alert("Hi");
     }
 
 }
@@ -29,6 +29,6 @@ window.onload = () => {
     var el = document.getElementById('content');
     var greeter = new Greeter(el);
     greeter.start();
-    var button1 = document.getElementById('Test');
+    var button1 = document.getElementById('mybutton');
     button1.onclick = greeter.Test;
 };

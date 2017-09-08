@@ -18,7 +18,7 @@
     };
 
     Greeter.prototype.Test = function (ev) {
-        alert(this.span.innerText);
+        alert("Hi");
     };
     return Greeter;
 })();
@@ -27,7 +27,7 @@ window.onload = function () {
     var el = document.getElementById('content');
     var greeter = new Greeter(el);
     greeter.start();
-    var button1 = document.getElementById('Test');
+    var button1 = document.getElementById('mybutton');
     button1.onclick = greeter.Test;
 };
 //# sourceMappingURL=app.js.map
