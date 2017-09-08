@@ -18,7 +18,7 @@
     };
 
     Greeter.prototype.Test = function (ev) {
-        alert("Hi");
+        alert("Hello");
     };
     return Greeter;
 })();

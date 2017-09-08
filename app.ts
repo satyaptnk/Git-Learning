@@ -20,7 +20,7 @@
     }
 
     Test(ev : MouseEvent) {
-        alert("Hi");
+        alert("Hello");
     }
 
 }
