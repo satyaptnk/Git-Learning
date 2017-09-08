@@ -22,8 +22,8 @@
             alert("Left Click");
         else if (ev.button === 1)
             alert("Right Click");
-        else
-            alert("Hello");
+        else if (ev.button === 1)
+            alert("MIddle Click");
     };
     return Greeter;
 })();
