@@ -18,12 +18,13 @@
     };
 
     Greeter.prototype.Test = function (ev) {
-        if (ev.button === 0)
+        if (ev.button === 0) {
             alert("Left Click");
-        else if (ev.button === 1)
+        } else if (ev.button === 1) {
             alert("Right Click");
-        else if (ev.button === 1)
+        } else if (ev.button === 1) {
             alert("MIddle Click");
+        }
     };
     return Greeter;
 })();
