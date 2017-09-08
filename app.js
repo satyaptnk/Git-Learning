@@ -16,6 +16,10 @@
     Greeter.prototype.stop = function () {
         clearTimeout(this.timerToken);
     };
+
+    Greeter.prototype.Test = function (ev) {
+        alert(this.span.innerText);
+    };
     return Greeter;
 })();
 
@@ -23,5 +27,7 @@ window.onload = function () {
     var el = document.getElementById('content');
     var greeter = new Greeter(el);
     greeter.start();
+    var button1 = document.getElementById('Test');
+    button1.onclick = greeter.Test;
 };
 //# sourceMappingURL=app.js.map

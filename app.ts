@@ -8,7 +8,7 @@
         this.element.innerHTML += "The time is: ";
         this.span = document.createElement('span');
         this.element.appendChild(this.span);
-        this.span.innerText = new Date().toUTCString();
+        this.span.innerText = new Date().toUTCString();  
     }
 
     start() {
@@ -19,10 +19,16 @@
         clearTimeout(this.timerToken);
     }
 
+    Test(ev : MouseEvent) {
+        alert(this.span.innerText);
+    }
+
 }
 
 window.onload = () => {
     var el = document.getElementById('content');
     var greeter = new Greeter(el);
     greeter.start();
+    var button1 = document.getElementById('Test');
+    button1.onclick = greeter.Test;
 };
