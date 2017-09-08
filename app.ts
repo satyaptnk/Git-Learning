@@ -19,8 +19,16 @@
         clearTimeout(this.timerToken);
     }
 
-    Test(ev : MouseEvent) {
-        alert("Hi");
+    Test(ev: MouseEvent) {
+        if (ev.button === 0) {
+            alert("Left Click");
+        }
+        else if (ev.button === 1) {
+            alert("Right Click");
+        }
+        else if (ev.button === 1) {
+            alert("MIddle Click");
+        }
     }
 
 }
